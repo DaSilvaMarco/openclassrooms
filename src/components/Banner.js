@@ -1,16 +1,7 @@
-import React from "react";
-import "../styles/banner.css";
-import logo from "../assets/logo.png";
+import '../styles/Banner.css'
 
-const Banner = () => {
-  const title = "La maison jungle";
+function Banner({ children }) {
+	return <div className='lmj-banner'>{children}</div>
+}
 
-  return (
-    <div className="lmj-banner">
-      <img src={logo} alt={title} className="lmj-logo" />
-      <h1 className="lmj-title">{title}</h1>
-    </div>
-  );
-};
-
-export default Banner;
+export default Banner
